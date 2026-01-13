@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  background: #0b0b0d;
+  color: white;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #121216;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  color: #aaa;
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.sidebar a:hover {
+  color: white;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 20px 40px;
+  overflow-y: auto;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.topbar input {
+  width: 300px;
+  padding: 8px 12px;
+  background: #1a1a1f;
+  border: none;
+  color: white;
+}
+
+.topbar button {
+  background: #0078f2;
+  border: none;
+  padding: 8px 18px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Featured */
+.featured {
+  display: flex;
+  background: #18181c;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.featured img {
+  width: 60%;
+}
+
+.featured-info {
+  padding: 20px;
+}
+
+.featured-info h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.featured-info button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #0078f2;
+  border: none;
+  color: white;
+}
+
+/* Store */
+.store h2 {
+  margin-bottom: 15px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Epic-style tiles */
+.game-tile {
+  background: #18181c;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.game-tile img {
+  width: 100%;
+}
+
+.game-tile span {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  color: #ccc;
+}

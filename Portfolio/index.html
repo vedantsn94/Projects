@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left-header-div">
+        <img src="/images/profile.jpeg" alt="profile" />
+        <h4>VEDANT NICHITE</h4>
+      </div>
+      <div id="menu" class="menudiv">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger" id="hamburger">☰</div>
+    </header>
+
+    <div id="home" class="hero-section">
+      <div class="left-hero">
+        <h3>I am</h3>
+        <h3 class="name">Vedant Nichite</h3>
+        <h3>I am a Web Developer</h3>
+        <div class="button-div">
+          <button class="hireMe">Hire Me</button>
+          <button class="myWork">My Work</button>
+        </div>
+      </div>
+      <div class="right-hero">
+        <img src="/images/profile.jpeg" />
+      </div>
+    </div>
+
+    <div id="qualifications" class="skills">
+      <div class="html-div">
+        <img src="/images/html-5.png" />
+        <h4>HTML</h4>
+      </div>
+      <div class="css-div">
+        <img src="/images/css-3.png" />
+        <h4>CSS</h4>
+      </div>
+      <div class="js-div">
+        <img src="/images/java-script.png" />
+        <h4>JavaScript</h4>
+      </div>
+    </div>
+    <div id="about" class="about-me">
+      <div class="code-img">
+        <img class="image" src="/images/port.png" />
+      </div>
+      <div class="about-part">
+        <h4>About Me</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+          fugit iure. Autem cum dicta temporibus facere, fugit, modi numquam
+          expedita eligendi aliquid at nisi explicabo, odio voluptatem quos hic
+          maxime!
+        </p>
+
+        <div class="about-btn">
+           <button id="openPopup">Qualifications</button>
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <section id="education">
+              <h2>Education</h2>
+              <div class="education-container">
+                <div class="education-item">
+                  <h3>
+                    Bachelor of Engineering in Computer Science Engineering
+                    (Artifitial Intelligence & Machine Learning)
+                  </h3>
+                  <p>
+                    <strong
+                      >Alamuri Ratnamala Institute of Engineering & Technology,
+                      Shahapur</strong
+                    >
+                    — Currently Persuing
+                  </p>
+                  <p>CGPA: ???</p>
+                </div>
+                <div class="education-item">
+                  <h3>Higher Secondary Education</h3>
+                  <p>
+                    <strong>Saraswati Junior Colloge, Vasind</strong> —
+                    2020–2022
+                  </p>
+                  <p>Percentage: 55%</p>
+                </div>
+                <div class="education-item">
+                  <h3>Secondary Education</h3>
+                  <p>
+                    <strong>Saraswati Vidyalaya, Vasind</strong> — 2019–2020
+                  </p>
+                  <p>Percentage: 84%</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <button id="openCertPopup">Certificates</button>
+        <div id="certPopup" class="certpopup">
+          <div class="cert-content">
+            <span id="closeCert" class="close">&times;</span>
+            <section id="certificates">
+              <h2>Certificates</h2>
+              <div class="cert-container">
+                <div class="cert-item">
+                  <img src="/images/cert1.png" alt="" />
+                </div>
+            </section>
+          </div>
+        </div>
+
+        </div>
+       
+
+        <div class="email">
+          <a
+            ><img
+              src="/images/gmail.png"
+            />vedantnichite121@gmail.com</a
+          >
+          <a><img src="/images/phone.png" />7218866034</a>
+          <a
+            ><img src="/images/location.png" />Mumbai,
+            Maharashtra-400001</a
+          >
+        </div>
+      </div>
+    </div>
+  
+    <div id="projects" class="projects">
+      <div>
+        <h4><a href="/Calculater/index.html">Calculator</a></h4>
+      </div>
+      <div><h4>Project 2</h4></div>
+      <div><h4>Project 3</h4></div>
+      <div><h4>Project 4</h4></div>
+    </div>
+
+    <div id="contact" class="contact-form">
+      <h4>Contact Me</h4>
+      <form>
+        <div class="input-box">
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter Your Name"
+            maxlength="50"
+            minlength="5"
+            required
+          />
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+            maxlength="30"
+            minlength="13"
+            required
+          />
+        </div>
+
+        <div class="input-box">
+          <textarea
+            id="message"
+            placeholder="Enter Your Message"
+            maxlength="300"
+            minlength="20"
+            required
+          ></textarea>
+        </div>
+      </form>
+      <button id="submit" onclick="submit()">Submit</button>
+    </div>
+
+    <footer id="footer">
+      <div class="rights">
+        <h4>All rights reserved to Vedant Nichite 2025</h4>
+      </div>
+      <div class="contact">
+        <img class="img1" src="images/instagram (1).png" />
+        <img class="img2" src="/images/linkedin.png" />
+        <img class="img3" src="/images/twitter.png" />
+        <img class="img4" src="/images/github-sign.png" />
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "pxKyGqysDCxKGsVK6",
+        });
+      })();
+    </script>
+    <script src="mainactivity.js"></script>
+  </body>
+</html>

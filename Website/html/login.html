@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+<body>
+    <div class="login-box">
+        <form>
+            <img src="/imgs/img1-logo.png">
+            <h4>Login</h4>
+            <input type="email" id="email" placeholder="Enter Your Email" required>
+            <input type="password" id="password" placeholder="Enter Your password" required>
+            <button onclick="checklogin()">Login</button>
+            <p>New user <a href="*">Sign In</a></p>
+        </form>
+    </div>
+    <script>
+        const realEmail="vedantnichite121@gmail.com"
+        const realPassword="123456"
+
+        function checklogin() {
+
+            let emailid = document.getElementById("email").value
+            let passid = document.getElementById("password").value
+
+            if (realEmail=== emailid && realPassword===passid) {
+                console.log("Login Successful")
+            } else {
+                console.log("Login Failed")
+            }
+
+            console.log(emailid)
+            console.log(passid)
+        }
+    </script>
+</body>
+</html>

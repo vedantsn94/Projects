@@ -1,0 +1,389 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    height: max-content;
+    background-color: rgb(0, 0, 0);
+}
+
+.left-header-div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    gap: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+img {
+    height: 50px;
+    width: auto;
+}
+
+h4 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.menudiv {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: right;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menudiv ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: end;
+    gap: 60px;
+}
+
+.menudiv ul li:hover {
+    transform: scale(1.2);
+}
+
+.menudiv ul li a {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+}
+
+.menudiv ul li a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.hero-section {
+    height: 90vh;
+    background-image: url("/Website/imgs/img2-header.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-section h1 {
+    font-size: 100px;
+    color: white;
+}
+
+.hero-section p {
+    font-size: 50px;
+    color: white;
+}
+
+.hero-section button {
+    height: 50px;
+    width: 120px;
+    padding: 10px;
+    border: 2px white solid;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-section button:hover {
+    transform: scale(1.2);
+    background-color: white;
+    border: 2px rgb(0, 0, 0) solid;
+
+}
+
+.hero-section button p {
+    font-size: 20px;
+}
+
+.hero-section button p:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+}
+
+.about-us-section {
+    width: auto;
+    padding: 20px;
+    height: 40vh;
+    background-color: rgb(255, 1, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutus-img {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus-img img {
+    height: 250px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.aboutus-part {
+    width: 60%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-us-section h4 {
+    font-size: 30px;
+}
+
+.about-us-section p {
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+.about-us-section button {
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 5px;
+    background-color:rgb(0, 0, 0);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.about-us-section button:hover {
+    transform: scale(1.2);
+    background-color: white;
+    border: 2px black solid;
+}
+
+.about-us-section button p {
+    color: rgb(255, 255, 255);
+    font-style: normal;
+}
+
+.about-us-section button p:hover {
+    color: black;
+}
+
+.table-div {
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.table-div table {
+    width: 95%;
+}
+
+.table-div table tr {
+    height: 100px;
+}
+
+.table-div table th {
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-div table td {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.table-div table td img {
+    height: 200px;
+    cursor: pointer;
+}
+
+.contact-us {
+    width: 100%;
+    margin: 0;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-us h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-us form {
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-us form input {
+    width: 60%;
+    padding: 10px;
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+}
+
+.contact-us form textarea {
+    width: 60%;
+    padding: 10px;
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+}
+
+.terms {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us button {
+    padding: 5px;
+    width: 10%;
+    border: 2px rgb(255, 0, 0) solid;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-us button:hover {
+    transform: scale(1.1);
+}
+
+.foot-section {
+    padding: 0;
+    margin: 0;
+    height: 350px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-div {
+    height: 50%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.foot1, .foot2, .foot3, .foot4 {
+    height: 90%;
+    width: 22%;
+}
+
+.foot1 ul {
+    display: flex; 
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.foot2 ul {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.foot3 ul {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.foot4 ul {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.foot1 ul a,
+.foot2 ul a,
+.foot3 ul a,
+.foot4 ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.foot-line {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 8%;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-foot {
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.left-foot h4 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-foot {
+    width: 20%;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
